@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 :root {
   --page-header-bgColor: #242e42;
@@ -7,7 +7,7 @@
   --page-header-headingColor: #7889a4;
   --page-header-width: 220px;
   --page-content-bgColor: #f0f1f6;
-  --page-content-txtColor: #171616;
+  --page-content-txtColor: #5f6e89;
   --page-content-blockColor: #fff;
   --white: #fff;
   --black: #333;
@@ -68,7 +68,7 @@ svg {
 }
 
 body {
-  font: 16px/1.5 "Lato", sans-serif;
+  font: 19px/1.5 "Roboto", sans-serif;
 }
 
 /* HEADER STYLES
@@ -119,7 +119,7 @@ body {
   width: 20px;
   height: 20px;
   fill: var(--page-header-txtColor);
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .page-header .admin-menu a,
@@ -134,7 +134,7 @@ body {
 .page-header .admin-menu button:hover,
 .page-header .admin-menu button:focus {
   background: var(--page-header-bgColor-hover);
-  color: var(--blue);
+  color: var(--white);
   outline: none;
 }
 
@@ -152,7 +152,6 @@ body {
   left: var(--page-header-width);
   width: calc(100% - var(--page-header-width));
   min-height: 100vh;
-  padding: 30px;
   color: var(--page-content-txtColor);
   background: var(--page-content-bgColor);
 }
@@ -160,24 +159,14 @@ body {
 .search-and-user {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-column-gap: 50px;
   align-items: center;
   background: var(--page-content-bgColor);
-  margin-bottom: 30px;
-}
-
-.search-and-user form {
   position: relative;
-}
-
-.search-and-user [type="search"] {
   width: 100%;
   height: 50px;
   font-size: 1.5rem;
   padding-left: 15px;
   background: var(--page-content-blockColor);
-  color: var(--white);
-  border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
 
@@ -190,7 +179,19 @@ body {
   height: 26px;
   fill: var(--page-content-txtColor);
 }
-
+input[type="search"] {
+  height: 26px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  background-color: var(--page-header-txtColor);
+}
+.search {
+  position: absolute;
+  top: 33%;
+  right: 13.8%;
+  height: 20px;
+}
 .search-and-user form button {
   position: absolute;
   top: 50%;
@@ -203,53 +204,19 @@ body {
   align-items: center;
 }
 
-.search-and-user .admin-profile .greeting {
-  margin: 0 10px 0 20px;
-}
-
 .search-and-user .admin-profile svg {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 
-.search-and-user .admin-profile .notifications {
-  position: relative;
+.dropdown-container {
+  display: none;
+  margin-left: 8px;
 }
 
-.search-and-user .admin-profile .badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -10px;
-  right: -3px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  font-size: 10px;
-  color: var(--white);
-  background: var(--red);
+.icon-down {
+  float: right;
 }
-
-.page-content .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-}
-
-.page-content .grid > article {
-  display: flex;
-  height: 300px;
-  background: var(--page-content-blockColor);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-}
-
-.page-content .grid > article:first-child,
-.page-content .grid > article:last-child {
-  grid-column: 1 / -1;
-}
-
 /* MQ RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 767px) {
