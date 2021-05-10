@@ -58,7 +58,13 @@ body {
   text-align: center;
   padding-top: 300px;
 }
+.login-btn {
+  background: #ffa800;
+  border-radius: 10px;
+  width: 100px;
 
+  margin-left: 75%;
+}
 /* Style the footer */
 .footer {
   background-color: #f1f1f1;
