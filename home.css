@@ -16,52 +16,51 @@
   --box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
 }
 
-.navigation {
-  height: 70px;
-  background: #ffffff;
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.brand {
-  float: left;
-  line-height: 70px;
-  font-size: 1.4em;
-}
-.brand a,
-.brand a:visited {
-  color: var(--oronge);
-  text-decoration: none;
-}
-
-.nav-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-nav {
-  margin-left: 300px;
-}
-nav ul {
-  list-style: none;
+body {
   margin: 0;
-  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-nav ul li {
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
   float: left;
-  margin-left: 100px;
-  position: relative;
-}
-nav ul li a {
   display: block;
-  padding: 0 20px;
-  line-height: 70px;
-  color: var(--black);
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-nav ul li ul li {
-  min-width: 190px;
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
-nav ul li ul li a {
-  padding: 15px;
-  line-height: 20px;
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 700px; /* Should be removed. Only for demonstration */
+  background: url("home.png");
+  background-size: cover;
+  text-align: center;
+  padding-top: 300px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
 }
