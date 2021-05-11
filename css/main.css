@@ -156,12 +156,18 @@ body {
 .page-content {
   position: relative;
   left: var(--page-header-width);
-  width: calc(100% - var(--page-header-width));
+  width: calc(100% - 220px);
   min-height: 100vh;
   color: var(--page-content-txtColor);
   background: var(--page-content-bgColor);
 }
-
+.open-nav {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.head-title {
+  display: flex;
+}
 .search-and-user {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -523,9 +529,8 @@ input[type="search"] {
 }
 
 .tasks {
-  width: 95%;
-  height: 35px;
-  margin: auto;
+  margin-left: 0.5%;
+  margin-top: 2%;
   border-bottom: 1px solid rgb(212, 212, 212);
 }
 .task-btn {

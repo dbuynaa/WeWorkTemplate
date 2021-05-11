@@ -10,7 +10,7 @@
 </head>
 <body>
     <aside class="sidebar">
-          <header class="page-header">
+          <header class="page-header" id="MenuBar">
             <nav>
               <a href="#0" aria-label="forecastr logo" class="logo">
                <img src="public/images/pngwing.com.png" width="140" height="38" alt="">
@@ -82,12 +82,18 @@
                   </li>
               </ul>
             </nav>
-          </header>
-          <section class="page-content">
-            <section class="search-and-user">
-           
             
-                <h1>НҮҮР</h1>
+          </header>
+          <section class="page-content" id="main">
+            <section class="search-and-user">
+           <div class="head-title">
+           
+            <button id="closeNav" class="open-nav">&#9776;</button>
+            <h1>home</h1>
+           </div>
+              
+                
+                
                 <div class="admin-profile">
                   <div class="search-container">
                   <form action="/action_page.php">
@@ -167,6 +173,6 @@
           
     </aside>
     
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
