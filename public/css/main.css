@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 :root {
-  --page-header-bgColor: #242e42;
-  --page-header-bgColor-hover: #1d2636;
-  --page-header-txtColor: #dde9f8;
+  --page-header-bgColor: #ffffff;
+  --page-header-bgColor-hover: #ffa800;
+  --page-header-txtColor: #242e42;
   --page-header-width: 220px;
   --page-content-bgColor: #f0f1f6;
-  --page-content-txtColor: #5f6e89;
+  --page-content-txtColor: #000000;
   --saaral: #f9fafc;
   --green: #23cb51;
   --oronge: #ffa800;
@@ -136,12 +136,6 @@ body {
   outline: none;
 }
 
-.page-header .admin-menu a:hover svg,
-.page-header .admin-menu a:focus svg,
-.page-header .admin-menu button:hover svg,
-.page-header .admin-menu button:focus svg {
-  fill: var(--blue);
-}
 .dropdown-container {
   display: none;
   margin-left: 8px;
@@ -164,6 +158,7 @@ body {
 .open-nav {
   margin-right: 20px;
   font-size: 20px;
+  color: var(--oronge);
 }
 .head-title {
   display: flex;
@@ -197,7 +192,7 @@ input[type="search"] {
   margin-right: 18px;
   padding-left: 6px;
   color: var(--page-content-txtColor);
-  background-color: var(--page-header-txtColor);
+  background-color: #f5f8fa;
 }
 .search {
   float: right;
@@ -314,12 +309,12 @@ input[type="search"] {
 }
 /* ––––––––– Column ––––––––––––––– */
 .card-columns {
-  box-sizing: border-box;
+  position: relative;
   overflow: auto;
   margin: 0px 39px;
   margin-top: 25px;
   width: auto;
-  height: 100%;
+  min-height: 600px;
   display: flex;
 }
 .column {
@@ -329,7 +324,7 @@ input[type="search"] {
   border-radius: 4px;
   margin-left: 14px;
   width: 320px;
-  min-height: 630px;
+  min-height: 100%;
 }
 .card-header {
   height: 50px;
