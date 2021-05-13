@@ -5,9 +5,10 @@
   --page-header-bgColor-hover: #ffa800;
   --page-header-txtColor: #242e42;
   --page-header-width: 220px;
-  --page-content-bgColor: #f0f1f6;
+  --page-content-bgColor: #fbfbff;
   --page-content-txtColor: #000000;
-  --saaral: #f9fafc;
+  --border-color: rgba(154, 154, 154, 0.38);
+  --saaral: #fbfbff;
   --green: #23cb51;
   --oronge: #ffa800;
   --red: #ff6a6a;
@@ -135,7 +136,12 @@ body {
   color: var(--white);
   outline: none;
 }
-
+.page-header .admin-menu a:hover svg,
+.page-header .admin-menu a:focus svg,
+.page-header .admin-menu button:hover svg,
+.page-header .admin-menu button:focus svg {
+  fill: var(--white);
+}
 .dropdown-container {
   display: none;
   margin-left: 8px;
@@ -569,6 +575,172 @@ input[type="search"] {
 }
 .project-task {
   margin-left: 6%;
+}
+/* ----------dashbourd-------------- */
+.dashbourd-bar {
+  width: 100%;
+  background: var(--white);
+  border: 1px solid rgb(212, 212, 212);
+  box-sizing: border-box;
+  height: 40px;
+}
+.dashbourdMenu {
+  margin-top: 5px;
+}
+
+.dashbourdMenu li {
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.1px;
+  color: rgb(68, 81, 104);
+  display: inline;
+  padding-left: 5%;
+}
+.dashbourdMenu :first-child {
+  padding-right: 17%;
+}
+.dashbourdMenu :nth-child(2) {
+  padding-right: 13%;
+}
+.dashbourdMenu :nth-child(3) {
+  padding-right: 12%;
+}
+.dashbourd {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid var(--border-color);
+}
+.dashbourd-name {
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid var(--border-color);
+  display: flex;
+}
+.box {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  margin-left: 50px;
+}
+.dashbourd-name p {
+  margin: auto;
+  margin-left: 15px;
+}
+.star {
+  width: 65px;
+  height: 51px;
+  background: #81d4fa;
+  border-radius: 14px;
+  text-align: center;
+}
+.star img {
+  align-items: center;
+  margin-top: 18%;
+  width: 24px;
+  height: 24px;
+}
+.dashbourd-status {
+  width: 70%;
+  display: flex;
+}
+.project-status {
+  display: flex;
+  height: 100%;
+  width: 230px;
+  margin-left: 5%;
+}
+.huvi-assign {
+  width: 200px;
+  height: 13px;
+  background: rgba(239, 239, 239, 0.81);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 13px;
+  margin: auto;
+}
+.project-status p {
+  display: inline;
+  margin: auto;
+
+  font-size: 19px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  color: rgba(95, 110, 137, 0.8);
+}
+.calendar {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  margin-left: 5%;
+}
+.calendar p {
+  margin: auto;
+  font-size: 19px;
+  letter-spacing: 0.1px;
+  color: rgba(95, 110, 137, 0.8);
+}
+.projectOwner {
+  width: 30%;
+  display: flex;
+}
+.profile-picture {
+  margin: auto;
+  display: table-row;
+  overflow: hidden;
+  border-radius: 25%;
+}
+.profile-picture img {
+  width: 35px;
+  height: 35px;
+}
+
+/* ----------message---------- */
+
+.messageBox {
+  width: 100%;
+  height: 100%;
+}
+.leftColumn {
+  position: absolute;
+  left: 0%;
+  background-color: var(--white);
+  width: 50%;
+  height: 100%;
+}
+.rightColumn {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+.messageCard {
+  height: auto;
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 0;
+  padding-top: 3%;
+}
+.card-project {
+  margin-bottom: 10px;
+  font-size: 19px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+}
+.card-project p {
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+}
+.project-image {
+  width: 7%;
+  height: 6%;
+  border-radius: 20%;
+  margin-right: 5px;
+}
+.project-image img {
+  box-sizing: border-box;
+  margin: auto;
 }
 
 @media screen and (max-height: 450px) {
