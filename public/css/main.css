@@ -180,6 +180,7 @@ body {
   font-size: 1.5rem;
   padding-left: 15px;
   box-shadow: var(--box-shadow);
+  border-bottom: 1px solid rgb(240, 240, 240);
 }
 
 .search-and-user ::placeholder {
@@ -310,20 +311,21 @@ input[type="search"] {
 }
 .project-bar li a:hover,
 .project-bar li a:focus {
-  color: var(--blue);
+  color: var(--oronge);
 }
 .project-bar li a :active {
   color: var(--blue);
 }
 /* ––––––––– Column ––––––––––––––– */
 .card-columns {
+  display: flex;
   position: relative;
-  overflow: auto;
+  overflow-x: auto;
+  margin: auto;
   margin: 0px 39px;
   margin-top: 25px;
   width: auto;
-  min-height: 600px;
-  display: flex;
+  min-height: 550px;
 }
 .column {
   background: var(--white);
@@ -331,6 +333,7 @@ input[type="search"] {
   display: inline-block;
   border-radius: 4px;
   margin-left: 14px;
+  overflow-y: auto;
   width: 320px;
   min-height: 100%;
 }
@@ -433,10 +436,10 @@ input[type="search"] {
 }
 .card-level {
   margin-left: auto;
-
-  border-radius: 100px;
-  width: 30%;
-  height: 90%;
+  border-radius: 75px;
+  width: 80px;
+  height: 21px;
+  text-align: center;
 }
 .high {
   background: var(--red);
@@ -448,11 +451,9 @@ input[type="search"] {
   background: var(--oronge);
 }
 .card-level > p {
-  font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 21px;
-  text-align: center;
   letter-spacing: 0.75px;
   color: var(--white);
   margin: auto;
@@ -661,7 +662,6 @@ input[type="search"] {
 .project-status p {
   display: inline;
   margin: auto;
-
   font-size: 19px;
   line-height: 21px;
   letter-spacing: 0.1px;
@@ -698,20 +698,20 @@ input[type="search"] {
 
 .messageBox {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .leftColumn {
   position: absolute;
   left: 0%;
-  background-color: var(--white);
   width: 50%;
-  height: 100%;
+  height: 91%;
 }
 .rightColumn {
   position: absolute;
   right: 0;
   width: 50%;
-  height: 100%;
+  height: 92%;
+  border-left: 1px solid var(--border-color);
 }
 .messageCard {
   height: auto;
@@ -733,16 +733,127 @@ input[type="search"] {
   letter-spacing: 0.1px;
 }
 .project-image {
-  width: 7%;
-  height: 6%;
+  width: 30px;
+  height: 23px;
   border-radius: 20%;
   margin-right: 5px;
 }
 .project-image img {
   box-sizing: border-box;
+  width: 80%;
+  height: 90%;
   margin: auto;
 }
+.messageColumn {
+  overflow-y: scroll;
+  width: 100%;
+  height: 73%;
+  padding-left: 5%;
+  background: var(--page-header-bgColor);
+  padding-top: 3%;
+}
+.messageName {
+  display: flex;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.1px;
+  margin-top: 3.8%;
+}
+.messageName.p :first-child {
+  color: var(--oronge);
+}
+.messageDet {
+  position: relative;
+  display: inherit;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.messageDet p {
+  margin-left: 7px;
+}
+.messageDet2 {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.messageDes {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  color: var(--page-header-txtColor);
+  margin-right: 5px;
+}
 
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 12px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  resize: none;
+}
+.input-comment {
+  display: flex;
+  position: fixed;
+  bottom: 0%;
+  height: 180px;
+  width: 50%;
+  background: var(--saaral);
+  border-top: 1px solid var(--border-color);
+}
+.input-comment .card-profile {
+  margin-right: 10px;
+}
+.input {
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+}
+.input-comment form {
+  width: 100%;
+  height: 140px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.comments {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  background: var(--saaral);
+  border-top: 1px solid rgb(247, 247, 247);
+}
+.comment {
+  display: flex;
+  width: 98%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-top: 1px solid var(--border-color);
+  margin: auto;
+  height: auto;
+}
+.comments :first-child {
+  border: none;
+}
+.creater {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: auto;
+}
+.one-comment {
+  font-size: 15px;
+  color: #1f1f1fda;
+  font-weight: 300;
+}
+.messageDate {
+  color: rgb(139, 139, 139);
+  font-size: 14px;
+  margin-left: 20px;
+}
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
