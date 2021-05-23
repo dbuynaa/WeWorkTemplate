@@ -35,3 +35,17 @@ function closeNav() {
  document.getElementById("MenuBar").style.display = "none";
  document.getElementById("closeNav").style.display = "block"
 }
+
+var password = document.getElementById("password");
+var confirm_password = document.getElementById("confirm_password");
+
+var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+  }
+}
