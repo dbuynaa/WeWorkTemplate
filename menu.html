@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/newproject.css">
     
 </head>
 <body>
@@ -156,7 +157,7 @@
                       <div class="project-name"><p>IT</p></div>
                     </div>
                   </a>
-                  <a href="#">
+                  <a onclick="document.getElementById('id01').style.display='flex'">
                     <div>
                       <div class="project-plus">
                         <div>
@@ -166,7 +167,10 @@
                             
                         </div>
                       </div>
-                      <div class="project-name"><p>Шинэ төсөл</p></div>
+                 
+                        <div class="project-name"><p>Шинэ төсөл</p></div>
+                    
+                      
                     </div>
                   </a>
                 </div>
@@ -174,7 +178,28 @@
            
             </article>
           </section>
-          
+          <section id="id01" class="modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-container">
+              <h1>Шинэ төсөл үүсгэх</h1>
+              <div class="modal-photo">
+                <img src="public/images/mountain.png" alt="change-photo" />
+                <p>Зураг солих</p>
+              </div>
+              <form>
+                <input placeholder="Project Name" />
+                <input placeholder="Description" />
+                <div class="modal-calendar">
+                  <input placeholder="Deadline" />
+                  <img src="public/images/calendar.svg" alt="calendar">
+                </div>
+              </form>
+              <div class="modal-buttons">
+                <button onclick="document.getElementById('id01').style.display='none'" class="close">Cancel</button>
+                <button class="modal-button">Create</button>
+              </div>
+            </div>
+          </section>
     </aside>
     
     <script src="./public/js/main.js"></script>

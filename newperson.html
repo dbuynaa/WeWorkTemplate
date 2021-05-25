@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/css/main.css">
-    <link rel="stylesheet" href="public/css/newperson.css">
+    <link rel="stylesheet" href="newperson.css">
+    
 </head>
 <body>
     <aside class="sidebar">
@@ -124,19 +125,7 @@
 
             <article>
                 <div class="members" >
-                  <div class="addNumber">
                     <h1>Гишүүд</h1>
-                    <button onclick="document.getElementById('id01').style.display='flex'" style="width:auto">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 7C11.45 7 11 7.45 11 8V11H8C7.45 11 7 11.45 7 12C7 12.55 7.45 13 8 13H11V16C11 16.55 11.45 17 12 17C12.55 17 13 16.55 13 16V13H16C16.55 13 17 12.55 17 12C17 11.45 16.55 11 16 11H13V8C13 7.45 12.55 7 12 7ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z" fill="black" fill-opacity="0.5"/>
-                      </svg>
-                    </button>
-                   
-                      
-                  </div>
-                  
-                    
-                    <button></button>
                     <div class="members-table">
                       <ul class="table table-head">
                         <li>Хамтран ажиллагсад</li>
@@ -173,7 +162,7 @@
                 </div>
             </article>
           </section>
-          <section class="modal" id="id01">
+          <section class="modal">
             <div class="modal-overlay"></div>
             <div class="modal-container">
               <h1>Гишүүн урих</h1>
@@ -182,11 +171,11 @@
                 <p>Role</p>
                 <div class="modal-calendar">
                   <input placeholder="Админ" />
-                  <img src="public/images/sort.svg" alt="calendar">
+                  <img src="./sort.svg" alt="calendar">
                 </div>
               </form>
               <div class="modal-buttons">
-                <button onclick="document.getElementById('id01').style.display='none'" class="close">Болих</button>
+                <button>Болих</button>
                 <button class="modal-button">Урих</button>
               </div>
             </div>

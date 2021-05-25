@@ -1055,9 +1055,16 @@ textarea {
 .members h1 {
   font-weight: 400;
   font-size: 18px;
-  padding-left: 30px;
-  padding-bottom: 40px;
   color: rgba(95, 110, 137, 0.8);
+}
+.addNumber {
+  display: flex;
+  width: 95px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-left: 30px;
 }
 .members-table {
   width: 100%;
