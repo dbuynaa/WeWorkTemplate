@@ -1,1 +1,1 @@
-https://dbuynaa.github.io/WeWork/menu.html
+https://dbuynaa.github.io/WeWorkTemplate/menu.html
